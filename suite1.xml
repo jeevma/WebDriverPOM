@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="suite1">
+    <test name="annotationdemo1">
+        <classes>
+            <class name="sdet.qa.automation.testng.FirstTestCase">
+                <methods>
+                    <include name="setup"/>
+                    <include name="login"/>
+                    <include name="teardown"/>
+                </methods>
+            </class>
+            <class name="sdet.qa.automation.testng.SecondTestCase">
+                <methods>
+                    <include name="setup_secTC"/>
+                    <include name="searchCustomer"/>
+                    <include name="addCustomer"/>
+                    <include name="teardown_secTC"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
